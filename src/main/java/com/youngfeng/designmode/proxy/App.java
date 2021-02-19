@@ -21,7 +21,7 @@ public class App
 //        DriverLogProxy driverLogProxy = new DriverLogProxy(driverTimeProxy);
 //
 //        driverLogProxy.drive();
-        DriverTimeProxy proxyInstance = (DriverTimeProxy) Proxy.newProxyInstance(driver);
-        proxyInstance.drive();
+        Drivable drivable = (Drivable) Proxy.newProxyInstance(driver);
+        drivable.drive();
     }
 }
